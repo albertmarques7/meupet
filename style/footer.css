@@ -7,3 +7,11 @@ footer {
     font-weight: bold; /* Texto em negrito */
     color: aliceblue; /* Cor do texto */
 }
+
+@media(max-width:780px) {
+    
+    footer {
+        font-size: 12px;
+        padding: 2.6%;
+}
+}

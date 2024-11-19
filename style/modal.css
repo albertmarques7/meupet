@@ -53,17 +53,43 @@
 
 @media (max-width: 680px) {
     #knowMore.show {
-        padding: 10%;
-        top: 35%;
+        padding: 8%;
+        top: 52%;
         width: 60%;
         z-index: 1000; /* Garante que o modal fique acima */
     }
     .xModal {
         bottom: 6%;
-        left: 0;
+        left: -106%;
         right: 47px; /* Distância da direita */
         font-size: 16px; /* Tamanho adequado para telas menores */
         z-index: 1100; /* Garante que o botão fique acima do modal */
     }
 }
 
+@media (max-width: 420px) {
+    #knowMore.show {
+        padding: 10%;
+        top: 40%;
+        width: 60%;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 419px) {
+    #knowMore.show {
+        padding: 10%;
+        top: 52%;
+        width: 60%;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 391px) {
+    #knowMore.show {
+        padding: 10%;
+        top: 40%;
+        width: 60%;
+        z-index: 1000;
+    }
+}
