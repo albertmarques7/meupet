@@ -1,0 +1,135 @@
+/* Define as propriedades padrão para o corpo da página */
+body {
+    height: 100%; /* Altura total da página */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    box-sizing: border-box; /* Inclui bordas no cálculo do tamanho */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: column; /* Elementos dispostos em coluna */
+    background-color: rgb(253, 255, 255); /* Define cor de fundo */
+}
+
+/* Área principal do conteúdo */
+main {
+    flex: 1; /* Ocupa o restante do espaço */
+    padding: 20px; /* Adiciona espaçamento interno para o conteúdo */
+    margin-bottom: 300px;  /*garante que o rodape fique no final da página sem sobras brancas*/
+}
+
+/* Estilização de subtítulos na área principal */
+main h2 {
+    padding: 10px 0px 0px 10px; /* Espaçamento */
+    margin: 0; /* Remove margens */
+    color: rgb(64, 59, 59); /* Cor do texto */
+}
+
+/* Lista sem marcadores */
+ul {
+    list-style-type: none; /* Remove os marcadores */
+    padding-left: 8%;
+}
+
+/* Estilização geral das listas */
+main ul {
+    width: 100%; /* Largura total */
+    max-width: 1080px; /* Largura máxima */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    min-height: 150px; /* Altura mínima */
+    display: flex; /* Usa flexbox */
+    flex-direction: row; /* Itens em linha */
+    justify-content: space-between; /* Distribui os itens */
+    color: rgb(55, 51, 51); 
+}
+
+/* Configurações de exibição em grade para seções de fotos */
+.secao_fotos {
+    padding: 0; /* Remove preenchimento */
+    margin: 10px; /* Margem geral */
+    margin-left: 20px; /* Margem à esquerda */
+    display: grid; /* Layout em grade */
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas */
+}
+
+/* Configurações para posts */
+.post {
+    display: flex; /* Itens lado a lado */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Configurações do texto dos posts */
+.texto_post {
+    margin-left: 2px; /* Espaço à esquerda */
+    margin-top: 0; /* Remove margem superior */
+}
+
+/* Títulos dentro dos posts */
+.texto_post h4 {
+    width: auto; /* Largura automática */
+    font-size: 12px; /* Tamanho menor da fonte */
+}
+
+/* Estilo adicional para 'span' */
+.post span {
+    font-weight: bold; /* Negrito */
+    font-size: 16px; /* Tamanho maior */
+}
+
+
+
+/* Estilização de elementos h4 dentro de posts */
+.post h4 {
+    font-weight: lighter; /* Texto com peso mais leve */
+    margin: 0; /* Remove margem padrão */
+}
+
+/* Imagens dentro da seção de fotos */
+.secao_fotos img {
+    height: 100px; /* Altura fixa */
+    padding-right: 12px; /* Espaçamento à direita */
+}
+
+/* Botões genéricos e modal */
+button, .modalButton {
+    background-color: rgb(135, 173, 173); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Efeito hover nos botões */
+button:hover, .modalButton:hover {
+    background-color: rgb(117, 149, 149); /* Cor alterada no hover */
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #c1b8b8; /* Cor de fundo */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Negrito */
+    color: aliceblue; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+
+@media (max-width:760px) {
+    main {
+        margin-bottom: 20%;
+    }
+    main h2 {
+        font-size: 30px;
+        margin-left: 18px;
+    }
+    .container-flex img {
+        width: 23%;
+    }
+    .secao_fotos {
+        display: block;
+    }
+    .post {
+        width: 90%;
+    }
+}

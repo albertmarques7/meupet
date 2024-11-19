@@ -1,0 +1,10 @@
+/* Configurações para formulários em tabela */
+.table_form {
+    margin-top: 10px; /* Margem superior */
+    margin-left: 10px; /* Margem à esquerda */
+    align-items: center; /* Centraliza os itens */
+    align-content: center; /* Centraliza o conteúdo */
+    background-color: rgb(246, 246, 246);
+    display: list-item; /* Faz em formatos de listas de item*/
+    list-style: none;
+}

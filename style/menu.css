@@ -1,0 +1,76 @@
+/* Estilização para container flexível */
+.container-flex {
+    display: flex; /* Define um container flexível */
+    justify-content: center; /* Alinha os itens centralizados horizontalmente */
+    background-color: #f4e8e8; /* Cor de fundo */
+    text-emphasis: double-circle; /* Enfase no texto */
+    font-size: 26px; /* Tamanho da fonte */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding-right: 6px; /* Espaçamento à direita */
+}
+
+/* Outro container flexível específico para 'sobre' */
+.container-flex-sobre {
+    display: flex; /* Alinha itens lado a lado */
+}
+
+/* Configurações específicas para imagens em 'sobre' */
+.container-flex-sobre img {
+    width: 250px; /* Largura fixa */
+    margin-top: 10px; /* Espaço superior */
+}
+
+/* Estilização do título no cabeçalho */
+header h1 {
+    margin: 0; /* Remove margem */
+    padding-top: 4px; /* Espaço superior */
+    text-align: center; /* Centraliza o texto */
+    color: rgb(59, 58, 58); /* Cor do texto */
+}
+
+/* Subtítulo no cabeçalho */
+header h3 {
+    margin: 0; /* Remove margens */
+    padding-bottom: 2px; /* Espaçamento inferior */
+    padding-top: 2px; /* Espaçamento superior */
+    text-align: center; /* Centraliza o texto */
+    background-color: #c1b8b8; /* Cor de fundo */
+    font-weight: lighter; /* Peso da fonte */
+}
+
+/* Estilização para a imagem no cabeçalho */
+header img {
+    width: 6%; /* Largura relativa */
+}
+
+/* Espaçamento adicional para títulos */
+.h1 {
+    padding-top: 20px; /* Espaço superior */
+}
+
+/* Configurações do menu */
+.menu {
+    background-color: rgb(172, 181, 181); /* Cor de fundo */
+    padding: 0px; /* Remove preenchimento */
+}
+
+/* Links do menu */
+.menu a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #685454; /* Cor do texto */
+    margin: 16px; /* Espaçamento */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    cursor: pointer; /* Cursor de link */
+}
+
+/* Link ativo */
+.menu a.active {
+    color: rgb(64, 59, 59); /* Cor especial */
+    font-weight: bold; /* Peso maior */
+}
+
+/* Hover para links do menu */
+.menu a:hover:not(.active) {
+    color: rgb(64, 59, 59); /* Cor alterada no hover */
+}

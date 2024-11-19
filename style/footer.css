@@ -1,0 +1,9 @@
+/* Rodapé */
+footer {
+    padding: 0px; /* Sem preenchimento */
+    background-color: #c1b8b8; /* Cor de fundo */
+    justify-content: center; /* Alinha conteúdo centralmente */
+    text-align: center; /* Centraliza texto */
+    font-weight: bold; /* Texto em negrito */
+    color: aliceblue; /* Cor do texto */
+}

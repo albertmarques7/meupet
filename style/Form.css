@@ -1,0 +1,100 @@
+/* Formulário principal */
+#meuFormulario {
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
+    color: #685454; /* Cor do texto */
+}
+
+/* Estilo para labels */
+label {
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilização dos inputs */
+input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Largura máxima */
+    padding: 12px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento vertical */
+    border: 1px solid #ccc; /* Borda com cor leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+}
+
+/* Estilo para o textarea */
+textarea {
+    width: 100%; /* Largura total */
+    height: 200px; /* Altura fixa */
+    padding: 0px; /* Sem preenchimento interno */
+    margin-top: 10px; /* Espaçamento no topo */
+    font-size: 16px; /* Tamanho do texto */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    white-space: pre-wrap; /* Mantém quebras de linha e espaços */
+}
+
+#meuFormulario {
+    padding: 20px;
+    max-width: 400px;
+    color: #685454;
+    
+}
+
+input {
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    max-width: 400px; /* Limita o tamanho máximo */
+    padding: 12px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento entre os inputs */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho do texto */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+textarea {
+    width: 100%;
+    min-height: 140px; /* define a altura */
+    padding: 0px; /* espaço interno */
+    margin-top: 10px;  /* margem no topo */
+    font-size: 16px; /* ajusta o tamanho do texto */
+    resize: vertical;
+    overflow-wrap: break-word; /* Quebra palavras muito longas */
+    white-space: pre-wrap; /* Preserva espaços e quebras de linha */
+}
+
+/* Botão */
+button {
+    background-color: rgb(135, 173, 173);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(117, 149, 149);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(135, 173, 173);
+}
+
+.modalButton:hover {
+    background-color:rgb(117, 149, 149);
+    cursor: pointer;
+}
+
+@media(max-width:680px){
+    main h2 {
+        padding-left: 0;
+    }
+}

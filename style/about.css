@@ -1,0 +1,36 @@
+/* Texto na seção 'sobre' */
+.texto_sobre {
+    color: rgb(64, 59, 59); /* Cor do texto */
+    max-width: 600px; /* Largura fixa */
+}
+
+/* Títulos na seção 'sobre' */
+.texto_sobre h2 {
+    padding-left: 10px; /* Espaçamento à esquerda */
+    padding-bottom: 0; /* Sem espaçamento inferior */
+}
+
+/* Parágrafos na seção 'sobre' */
+.texto_sobre p {
+    padding: 20px; /* Espaçamento interno */
+    padding-bottom: 0; /* Sem espaçamento inferior */
+    margin: 0; /* Remove margens */
+}
+
+@media(max-width: 768px) {
+    .main {
+        text-align: center;
+    }
+    .texto_sobre h2 {
+        padding-left: 0;
+    }
+    .container-flex-sobre {
+        display: block;
+        align-content: center;
+    }
+    .container-flex-sobre img {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+

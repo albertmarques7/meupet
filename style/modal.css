@@ -1,0 +1,69 @@
+/* Botão modal */
+.modalButton {
+    background-color: rgb(135, 173, 173); /* Cor de fundo */
+    color: #685454; /* Cor do texto */
+    width: 124px; /* Largura fixa */
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Configurações para o modal */
+#knowMore.show {
+    display: flex; /* Exibe o modal */
+    position: fixed; /* Fixa o modal na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta posição ao centro exato */
+    background-color: rgb(253, 255, 255); /* Cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 50px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 420px; /* Largura máxima */
+    min-height: 320px; /* Altura mínima */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+/* Imagens dentro do modal */
+.modal img {
+    width: 100%; /* Largura total */
+}
+
+/* Modal escondido por padrão */
+#knowMore {
+    display: none; /* Invisível inicialmente */
+}
+
+/* Estilo do texto adicional */
+#txt1 {
+    font-size: 18px; /* Tamanho do texto */
+    color: #685454; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+}
+
+/* Botão de fechamento do modal */
+.xModal {
+    position: relative; /* Relativo ao contêiner */
+    left: 435px; /* Posiciona à esquerda */
+    bottom: 36px; /* Ajusta a posição vertical */
+    font-weight: bold; /* Negrito */
+    color: #685454; /* Cor do texto */
+    background-color: azure; /* Cor de fundo */
+    cursor: pointer; /* Cursor de clique */
+}
+
+@media (max-width: 680px) {
+    #knowMore.show {
+        padding: 10%;
+        top: 35%;
+        width: 60%;
+        z-index: 1000; /* Garante que o modal fique acima */
+    }
+    .xModal {
+        bottom: 6%;
+        left: 0;
+        right: 47px; /* Distância da direita */
+        font-size: 16px; /* Tamanho adequado para telas menores */
+        z-index: 1100; /* Garante que o botão fique acima do modal */
+    }
+}
+

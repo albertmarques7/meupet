@@ -1,0 +1,168 @@
+<!-- Declaração do tipo de documento HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define a linguagem do documento como português do Brasil -->
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define a viewport para controle de layout responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adiciona um ícone para o site -->
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <!-- Vincula o arquivo CSS externo -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <!-- Define o título da página -->
+    <title>Meu pet</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="container-flex">
+            <!-- Logo do site -->
+            <img src="images/logo.png" alt="logo cão">
+            <!-- Título principal -->
+            <h1>Meu pet</h1>
+        </div>
+        <!-- Subtítulo -->
+        <h3>Histórias do seu pet é aqui</h3>
+    </header>
+    <!-- Menu de navegação -->
+    <div class="menu">
+        <nav>
+            <!-- Lista de itens do menu -->
+            <ul class="menu_itens">
+                <!-- Link para a página inicial -->
+                <i><a class="active" href="index.html">Home</a></i>
+                <!-- Link para o formulário -->
+                <i><a href="form.html">Formulário</a></i>
+                <!-- Link para a página sobre -->
+                <i><a href="about.html">Sobre</a></i>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <!-- Título principal do conteúdo -->
+        <h2>Envios dos aumigos do site</h2>
+        <!-- Primeira seção de fotos -->
+        <ul class="secao_fotos">
+            <!-- Postagem do Queno -->
+            <li class="post">
+                <!-- Imagem do Queno -->
+                <img src="images/quenologo.png" alt="">
+                <div class="texto_post">
+                    <h4>
+                        <!-- Subtítulo do post -->
+                        <span>Conheça a história do Queno:</span>
+                        <!-- Trecho da história -->
+                        Era uma noite chuvosa quando Queno apareceu na minha porta...
+                    </h4>
+                    <!-- Botão para abrir o modal -->
+                    <input class="modalButton" value="Leia mais" type="button" onclick="openModal('Queno')">
+                </div>
+            </li>
+            <!-- Postagem do Biscoito -->
+            <li class="post">
+                <!-- Imagem do Biscoito -->
+                <img src="images/biscoito.jpg" alt="">
+                <div class="texto_post">
+                    <h4>
+                        <!-- Subtítulo do post -->
+                        <span>Esse é o Biscoito!</span>
+                        <!-- Trecho da história -->
+                        Biscoito escapou da coleira e correu para brincar com os patos do parque...
+                    </h4>
+                    <!-- Botão para abrir o modal -->
+                    <input class="modalButton" value="Leia mais" type="button" onclick="openModal('Biscoito')">
+                </div>
+            </li>
+            <!-- Postagem da Gin -->
+            <li class="post">
+                <!-- Imagem da Gin -->
+                <img src="images/gin.jpg" alt="">
+                <div class="texto_post">
+                    <h4>
+                        <!-- Subtítulo do post -->
+                        <span>Conheça a Gin: </span>
+                        <!-- Trecho da história -->
+                        Gin, minha doguinha, não gostava muito de água...
+                    </h4>
+                    <!-- Botão para abrir o modal -->
+                    <input class="modalButton" value="Leia mais" type="button" onclick="openModal('Gin')">
+                </div>
+            </li>
+        </ul>
+        <!-- Segunda seção de fotos -->
+        <ul class="secao_fotos">
+            <!-- Postagem do Scotch -->
+            <li class="post">
+                <!-- Imagem do Scotch -->
+                <img src="images/scotch2.jpg" alt="">
+                <div class="texto_post">
+                    <h4>
+                        <!-- Subtítulo do post -->
+                        <span>Scotch, o desbravador de quintais: </span>
+                        <!-- Trecho da história -->
+                        Scotch adorava correr pelo quintal, mas um dia...
+                    </h4>
+                    <!-- Botão para abrir o modal -->
+                    <input class="modalButton" value="Leia mais" type="button" onclick="openModal('Scotch')">
+                </div>
+            </li>
+            <!-- Postagem do Billy -->
+            <li class="post">
+                <!-- Imagem do Billy -->
+                <img src="images/billy.jpg" alt="">
+                <div class="texto_post">
+                    <h4>
+                        <!-- Subtítulo do post -->
+                        <span>Billy e o amigo invisível: </span>
+                        <!-- Trecho da história -->
+                        Billy sempre late para um cantinho vazio da sala, como se visse algo...
+                    </h4>
+                    <!-- Botão para abrir o modal -->
+                    <input class="modalButton" value="Leia mais" type="button" onclick="openModal('Billy')">
+                </div>
+            </li>
+            <!-- Postagem da Pintada -->
+            <li class="post">
+                <!-- Imagem da Pintada -->
+                <img src="images/pintada.png" alt="">
+                <div class="texto_post"> 
+                    <h4 >
+                        <!-- Subtítulo do post -->
+                        <span>Pintada, a amiga de todos os vizinhos: </span>
+                        <!-- Trecho da história -->
+                        Pintada fez amizade com os gatos que visitam nosso portão todos os dias...
+                    </h4>
+                    <!-- Botão para abrir o modal -->
+                    <input class="modalButton" value="Leia mais" type="button" onclick="openModal('Pintada')">
+                </div>
+            </li>
+        </ul>
+        <!-- Modal para exibir detalhes -->
+        <div id="knowMore" class="modal">
+            <header>
+                <!-- Botão para fechar o modal -->
+                <span onclick="closeModal()" class="xModal">X</span>
+            </header>
+            <div>
+                <!-- Imagem do modal -->
+                <img id="modalImg" src="" alt="Imagem do post">
+                <!-- Texto principal -->
+                <p id="txt1" class="infoH"></p>
+                <!-- Texto adicional -->
+                <p id="txt2" class="info"></p>
+            </div>
+        </div>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Créditos -->
+        <p>&copy Feito por Alberto Marques - Atividade de Fundamentos de Programação Web, 2024 (PUCPR)</p>
+    </footer>
+    <!-- Importação do script JavaScript -->
+    <script src="./script/main.js"></script>
+</body>
+</html>
