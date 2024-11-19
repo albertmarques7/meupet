@@ -54,7 +54,7 @@
 @media (max-width: 680px) {
     #knowMore.show {
         padding: 8%;
-        top: 52%;
+        top: 54%;
         width: 60%;
         z-index: 1000; /* Garante que o modal fique acima */
     }
@@ -79,7 +79,7 @@
 @media (max-width: 419px) {
     #knowMore.show {
         padding: 10%;
-        top: 52%;
+        top: 54%;
         width: 60%;
         z-index: 1000;
     }
